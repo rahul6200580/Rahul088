@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registration Form</h1>
+      <form action="/noaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+        <p>
+          Name: <input type="text" name="Name" placeholder="Enter your name"
+          class="form-control"
+        </p>
+        <p>
+          Email: <input type="email" name="Email" placeholder="Enter your email Address" class="form-control"
+        </p>
+        <p>
+          Phone: <input type="tel" name="Phone" placeholder="Enter your phone"
+          class="form-control"
+        </p>
+        <p>
+          Gender:
+          <select type="text" class="form-control" required>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </p>
+
+        <p>
+          Address:
+          <textarea
+            rows="5"
+            class="form-control"
+            cols="40"
+            placeholder="Enter your Address"
+            required
+          ></textarea>
+        </p>
+
+        <input type="submit" value="Back" class="but">
+        <input type="submit" value="Submit" class="but">
+        <input type="reset" value="Reset" class="but">
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
